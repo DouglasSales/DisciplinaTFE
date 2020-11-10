@@ -1,0 +1,161 @@
+/*Padrões de reset*/
+
+
+/*Tipografia e Cores: estilos pra cores, links, fundo*/
+
+
+/*Estrutura: estilização de menu, rodape, corpo*/
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666;
+}
+
+header{
+    text-align: center;
+    background: #efefef;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 0.3em;
+}
+
+.container{
+    text-align: center;
+    width: 200px;
+    margin: 3 auto;
+}
+
+.canvas-container{
+    min-height: 300px;
+    max-height: 600px;
+    position: relative;
+}
+
+.grafico {
+    position: relative;
+    margin-bottom: 80px;
+    background: #efefef;
+    padding: 12px;
+    margin-bottom: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*Estilos específicos de seção: */
+.head__custom-nav .navbar-brand img {
+    width: 25px;
+    height: 25px; 
+}
+.head__custom-nav .navbar-brand span {
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 10px; }
+
+.head__custom-nav button {
+    padding: 0; 
+}
+
+.head__custom-nav button span img {
+    width: 35px; 
+}
+
+
+/*Formulário e tabelas*/
+
+
+/*Classe de uso geral*/
+
+
+/*Responsivo */
+@media only screen and (min-width:300px){
+    .container {
+     width: 300px;
+     margin: 0 auto;
+     }
+   
+     footer{
+        text-align: center;
+    }         
+    }
+     
+    @media only screen and (min-width:600px){
+     .container {
+     width: 580px;
+     margin: 0 auto;
+     }
+     .chart {
+     float: left;
+     width: 47.5%;
+     margin-left: 5%;    
+     }
+     .chart:first-child {
+     margin-left: 0;
+     }
+     .chart:last-child {
+     display: block;
+     width: 100%;
+     margin-left: 0;
+     }
+     footer{
+        text-align: center;
+    }     
+    
+    }
+     
+    @media only screen and (min-width:960px){
+     .container {
+     width: 940px;
+     }
+     .chart {
+     float: left;
+     width: 30%;
+     margin-left: 2.5%;
+     margin-right: 2.5%;
+     }
+     .chart:first-child {
+     margin-left: 0;
+     }
+     .chart:last-child {
+     margin-right: 0;
+     margin-left: 2.5%;
+     width: 30%;
+     }
+
+     footer{
+        bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
+    }
+ 
+    }
+    @media only screen and (min-width:1140px){
+     .container {
+     width: 1120px;
+     }
+
+     footer{
+        bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
+    }
+
+    }
+    @media only screen and (min-width:1360px){
+     .container {
+     width: 1300px;
+     }
+
+     footer{
+        bottom: 0;
+        position: fixed;
+        width: 90%;
+        text-align: center;
+    }
+    }
